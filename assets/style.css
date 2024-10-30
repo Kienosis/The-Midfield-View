@@ -4,12 +4,14 @@ body {
 
 .hero {
     background-size: cover;
+    background-position: center;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    color: white;
 }
+
 
 .card {
     transition: transform 0.3s;
