@@ -1,43 +1,84 @@
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<!-- jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midfield View</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-3">
-        <h1>Midfield View</h1>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Articles</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Midfield View</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center" style="background-image: url('assets/hero.jpg');">
+        <div class="container">
+            <h1 class="display-4 text-white">Welcome to Midfield View</h1>
+            <p class="lead text-white">Your go-to source for USL Championship news and insights.</p>
+        </div>
     </header>
 
-    <main class="container my-4">
+    <!-- Articles Section -->
+    <main class="container my-5">
         <div class="row">
-            <div class="col-md-8">
-                <!-- Main content goes here -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/article1.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title 1</h5>
+                        <p class="card-text">Brief description of the first article content.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-                <!-- Sidebar for additional links or ads -->
+                <div class="card mb-4">
+                    <img src="assets/article2.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title 2</h5>
+                        <p class="card-text">Brief description of the second article content.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/article3.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title 3</h5>
+                        <p class="card-text">Brief description of the third article content.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="text-center py-4">
-        <p>&copy; 2024 Midfield View</p>
+        <p>&copy; 2024 Midfield View. All rights reserved.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
