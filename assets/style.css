@@ -85,4 +85,20 @@ footer {
 .card-text {
     font-size: 1rem;
     color: #666;
-    line-height: 1.5
+    line-height: 1.5;
+}
+
+.card .btn-primary {
+    background-color: #333;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background-color: #ffd700; /* Gold color on hover */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
